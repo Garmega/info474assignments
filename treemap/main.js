@@ -10,7 +10,7 @@ function main() {
         chart.width(1000)
         chart.height(1000)
         chart.padding(5)
-        chart.nestedElement("region").measure("fertility_rate").elementText("life_expectancy")
+        chart.nestedElement("region").measure("fertility_rate").elementText("country_code")
         var div = d3.select("#vis").datum(data).call(chart);
     })
 }
